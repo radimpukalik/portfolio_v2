@@ -1,0 +1,58 @@
+// Config
+@import 'config';
+// Components
+@import './components/hamburger-menu';
+@import './components/common';
+@import './components/icon-list';
+@import './components/buttons';
+@import './components/socials';
+@import './components/sidebar';
+@import './components/carousel';
+// Pages
+@import './pages/layout';
+@import './pages/home-page';
+@import './pages/skills';
+@import './pages/projects';
+@import './pages/contact-me';
+// Responsive
+@import 'responsive';
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: $main-text-color;
+  background-color: $main-background;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include flex-center;
+}
+
+a, li {
+  background-color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  color: $sidebar-text-color;
+}

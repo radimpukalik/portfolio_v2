@@ -1,0 +1,15 @@
+.socials {
+  &-container {
+    @include flex-center;
+    gap: 1rem;
+  }
+
+  &-icon {
+    color: $main-text-color;
+  }
+  
+  &-icon:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+}

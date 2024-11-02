@@ -1,0 +1,96 @@
+/* Tablet (min-width: 600px) */
+@media (min-width: 600px) {
+  body {
+    margin-left: 200px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .sidebar {
+    &-container {
+      font-size: 0.8rem;
+      width: 200px;
+      left: 0;
+    }
+    &-middle {
+      li {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .skills {
+    &-container {
+      padding-top: 2.5em;
+    }
+  }
+}
+
+/* Laptop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  body {
+    margin-left: 300px;
+  }
+
+  .home-page{
+    &-container {
+      h1{
+        font-size: 6rem;
+      }
+      h2{
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .sidebar {
+    &-container {
+      font-size: 1.2rem;
+      width: 300px;
+      left: 0;
+    }
+    &-middle {
+      width: 70%;
+      li {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .contact-me {
+    font-size: 0.8rem;
+    &-form-credentials {
+      flex-direction: row;
+      gap: 2em;
+    }
+  }
+
+  .skills {
+    &-container {
+      padding-top: 0;
+    }
+  }
+}
+
+/* Desktop/PC (min-width: 1440px) */
+@media (min-width: 1440px) {
+  body {
+    margin-left: 400px;
+  }
+
+  .sidebar {
+    &-container {
+      width: 400px;
+      left: 0;
+    }
+    &-middle {
+      width: 60%;
+    }
+  }
+
+  .contact-me {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,26 @@
+$sidebar-background: #242524;
+$sidebar-text-color: #E1E1E1;
+$main-background: #121212;
+$main-secondary-background: #222222;
+$main-text-color: rgb(193, 194, 193);
+$secondary-color: #1E2632;
+$tertiary-color: #1E90FF;
+$accent: #5B4B8A;
+
+$form-item-width: 90%;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}

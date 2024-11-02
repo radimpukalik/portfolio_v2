@@ -1,0 +1,92 @@
+.contact-me {
+  min-height: 100vh;
+  text-align: center;
+  @include flex-center;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.7rem;
+  
+  label {
+    font-size: 1.3em;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    background-color: $main-text-color;
+    border: none;
+  }
+
+  p {
+    color: #DC143C;
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+&-form {
+    @include flex-center;
+    gap: 1em;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em 0;
+    border-radius: 10px;
+    width: $form-item-width;
+    background-color: $main-secondary-background;
+    max-width: 60em;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    &-credentials {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: $form-item-width;
+
+      &-item {
+        // @include flex-center;
+        // flex-direction: column;
+        width: 100%;
+
+        input {
+          
+        }
+      }
+    }
+    
+    &-message {
+      width: $form-item-width;
+
+      textarea {
+        height: 12em;
+      }
+    }
+    
+    &-recaptcha {
+      
+    }
+    
+    &-send-button{
+      input {
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: $main-background;
+        color: $main-text-color;
+        padding: 0.5em 3em;
+        border: none;
+        border-radius: 0.5em;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover:enabled{
+            color: white;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+  
+        &:disabled{
+            cursor: not-allowed;
+        }
+      }
+  }
+  }
+}

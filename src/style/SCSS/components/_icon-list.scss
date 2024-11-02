@@ -1,0 +1,32 @@
+.item-list {
+  @include flex-center;
+  gap: 1rem;
+
+  li {
+    width: 1.8em; 
+    height: 1.8em; 
+    @include flex-center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    overflow: hidden; 
+    background-color: $main-background;
+  }
+
+  // @media (min-width: 600px) {
+  //   li {
+  //     font-size: 1.5em;
+  //   }
+  // }
+
+  @media (min-width: 1024px) {
+    li {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    li {  
+      font-size: 2rem;
+    }
+  }
+}

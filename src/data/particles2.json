@@ -1,0 +1,66 @@
+{
+  "autoPlay": true,
+  "background": {
+    "color": { "value": "#121212;" }  
+  },
+  "clear": true,
+  "fullScreen": {
+    "enable": true,
+    "zIndex": -1
+  },
+  "detectRetina": true,
+  "fpsLimit": 120,
+  "interactivity": {
+    "detectsOn": "window",
+    "events": {
+      "resize": {
+        "delay": 0.5,
+        "enable": true
+      }
+    }
+  },
+  "particles": {
+    "color": {
+      "value": "#5B4B8A"
+    },
+    "move": {
+      "speed": 2,
+      "outModes": {
+        "default": "out"
+      }
+    },
+    "number": {
+      "density": {
+        "enable": true,
+        "width": 1920,
+        "height": 1080
+      },
+      "value": 200
+    },
+    "opacity": {
+      "value": {
+        "min": 0.1,
+        "max": 1
+      },
+      "animation": {
+        "enable": true,
+        "speed": 0.25,
+        "startValue": "random"
+      }
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "size": {
+      "value": 1.5
+    }
+  },
+  "pauseOnBlur": true,
+  "pauseOnOutsideViewport": true,
+  "motion": {
+    "reduce": {
+      "factor": 4,
+      "value": true
+    }
+  }
+}
