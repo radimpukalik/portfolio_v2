@@ -1,0 +1,38 @@
+.language-to-icons{
+    &-container {
+      @include flex-center;
+      gap: 1em;
+    }
+    
+    font-size: 0.5rem;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    overflow: hidden; 
+    background-color: $main-background;
+    @include flex-center;
+
+    &-icon {
+      width: 50%;
+      height: 50%;
+    }
+}
+
+@media (min-width: 450px) {
+  .language-to-icons {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 820px) {
+  .language-to-icons {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .language-to-icons {
+    font-size: 1.1rem;
+  }
+}

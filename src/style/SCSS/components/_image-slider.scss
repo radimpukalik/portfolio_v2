@@ -1,0 +1,96 @@
+.image-slider {
+  //main container
+  &-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    user-select: none;
+  }
+
+  //icon style
+  &-icon {
+    // fill: conic-gradient(#b33a3a, #0056d3, #b33a3a);
+    fill: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+  //left and right buttons
+  &-button {
+    height: 100%;
+    width: 8%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    background-color: transparent;
+    border: none;
+
+    &:first-of-type {
+      left: 0;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+
+    &:last-of-type {
+      right: 0;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    &:hover {
+      background-color: rgb(0, 0, 0, 0.2);
+    }
+
+    &-icon {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  // image
+  &-pages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  &-page-image {
+    object-fit: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
+  }
+
+  // bullet points
+  &-bullets{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    height: 8%;
+  }
+
+  &-bullet {
+    transition: scale 100ms ease-in-out;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}

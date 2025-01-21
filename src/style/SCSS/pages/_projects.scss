@@ -5,5 +5,25 @@
     text-align: center;
     min-height: 100vh;
     gap: 2em;
+    width: 100%;
+  }
+
+  &-project-slider {
+    width: 95%;
+    max-width: 1200px;
+    height: 100%;
   }
 }
+
+@media (min-width: 450px) {
+  .projects-project-slider {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-project-slider {
+    width: 85%;
+  }
+}
+
